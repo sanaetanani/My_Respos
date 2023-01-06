@@ -6,7 +6,7 @@ function enregistre(){
         "Prix":       document.getElementById("prix").value,
         "Categorie":  document.getElementById("categorie").value,
     }
-      t.push(p);
+      t.push(p) ;
     console.log(t);
 }
 function afficher(){
