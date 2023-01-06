@@ -10,7 +10,7 @@ function enregistre(){
     console.log(t);
 }
 function afficher(){
-    document.getElementById('produits').innerHTML= ""
+    document.getElementById('produits').innerHTML= " "
     for(var p of t){
         document.getElementById('produits').innerHTML+='<tr><td>'+ p.Ref +'</td><td>' + p.Designation + '</td><td>' + p.Prix + '</td><td>' + p.Categorie + '</td><td><button type="button" onclick=supp("'+p.Ref+'")>supprimer</button></td></tr>'  
         
