@@ -10,5 +10,5 @@ function calculDuree(){
   }
   else{
     alert('inscription ok')
-  }  
+  }   
 }
