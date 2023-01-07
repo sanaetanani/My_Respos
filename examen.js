@@ -6,7 +6,7 @@ function calculDuree(){
   var date2= new Date();
   var duree= date2.getFullYear() - date1.getFullYear();
   if(duree<9){     
-    alert("vous n'avez pas encore le droit ")
+    alert("vous n'avez pas encore le droit ")     
   }
   else{
     alert('inscription ok')
