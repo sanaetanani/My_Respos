@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="examen.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="exame.css">
+    <title>examen</title>
+  </head>
+  <body>
+    <form>
+    <fieldset name="par">
+    <legend><h3>Informations personnelles:</h3></legend>
+    <pre>
+    CIN:                        <input type="text" name="cin" placeholder="entrer votre CIN">
+   
+    NOM:                        <input type="text" name="nom" placeholder="entrer votre nom">
+   
+    PRENOM:                     <input type="text" name="prenom" placeholder="entrer votre prenom">
+   
+    Date Du Dernier Pélerinage: <input type="date" name="dernnier" id="par2">
+   
+    Sexe:                       H<input type="radio" name="sexe" onclick="afficherCacher('none')"> F<input type="radio" name="sexe" onclick="afficherCacher('block')">
+    </pre></fieldset>
+    <fieldset id="mahram">
+    <legend><h3>Accompagnateur(Mahram):</h3></legend> 
+    <pre>
+    CIN de l'Accompagnateure:    <select><option>BHXXXX</option>
+                                    <option>HXXXXX</option>
+                                 </select><br>
+    Lien Familial:               <select><option>Pére</option>
+                                    <option>Frere</option>
+                                 </select>
+    </pre>
+    </fieldset>
+    <fieldset>
+    <legend><h3> Dossier Medicale:</h3></legend>
+    <pre>
+    Groupe Sanguin:              <select><option>O+</option>
+                                    <option>A+</option>
+                                    <option>B+</option>
+                                    <option>A-</option>
+                                 </select><br>
+    Maladies:                    <select  multiple=" " size="2">
+                                    <option>hypertensio n</option>
+                                    <option>diabete</option>
+                                    <option>hypertension</option>
+                                    <option>diabete</option>
+                                    <option>hypertension</option>
+                                    <option>diabete</option>
+                                    <option>hypertension</option>
+                                    <option>diabete</option>
+                                 </select>
+    </pre>
+    </fieldset><br>
+    <input type="submit" value="s'inscrire" onclick="return calculDuree()">
+    <!--<input type="reset" value="annulle">-->
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<script>
+    function afficherCacher(etat){
+    document.getElementById("mahram").style.display=etat;
+  }
+  function calculDuree(){
+    var dateP=new Date(document.getElementById('date').value);
+    var dateAuj= new Date();
+
+    var duree= dateAuj.getFullYear() - dateP.getFullYear();
+    if(duree<9){
+      console.log('erreur')
+       alert("vous n'avez pas encore le droit ")
+       return false
+    }
+    else{
+      alert('bienvenue')
+    }
+     
+  }
+</script>
+-->
