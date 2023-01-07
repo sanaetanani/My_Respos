@@ -1,5 +1,5 @@
 function afficherCacher(etat){
-  document.getElementById("mahram").style.display=etat;
+  document.getElementById("mahram").style.display=etat; 
 }
 function calculDuree(){
   var date1= new Date(document.getElementById('par2').value);
