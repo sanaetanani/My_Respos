@@ -21,7 +21,7 @@ function supp(ref){
         if(t[i].Ref==ref){
             t.splice(i,1);
             break;
-     }
+     }  
  }
     afficher();
     console.log(t);
